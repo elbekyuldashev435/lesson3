@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+</head>
+
+<h1>Products</h1><br>
+
+<body>
+    {% for product in products %}
+        <img src="{{ product.image.url }}"/><br>
+        Model: {{ product.model }}<br>
+        Make: {{ product.make }}<br>
+        Information: {{ product.body }}<br>
+        Price: {{ product.price }}<hr>
+    {% endfor %}
+</body>
+</html>
